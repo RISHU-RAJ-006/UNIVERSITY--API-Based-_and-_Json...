@@ -1,0 +1,79 @@
+{
+  "india": [
+    "Delhi University",
+    "IIT Bombay",
+    "IIT Delhi",
+    "Banaras Hindu University",
+    "Jawaharlal Nehru University",
+    "Aligarh Muslim University",
+    "Lovely professinoal university"
+  ],
+
+  "usa": [
+    "Harvard University",
+    "Stanford University",
+    "MIT",
+    "Yale University",
+    "Princeton University"
+  ],
+
+  "uk": [
+    "Oxford University",
+    "University of Cambridge",
+    "Imperial College London",
+    "King's College London"
+  ],
+
+  "canada": [
+    "University of Toronto",
+    "McGill University",
+    "University of British Columbia",
+    "University of Alberta"
+  ],
+
+  "australia": [
+    "University of Melbourne",
+    "University of Sydney",
+    "Monash University",
+    "Australian National University"
+  ],
+
+  "germany": [
+    "Technical University of Munich",
+    "Heidelberg University",
+    "RWTH Aachen University",
+    "University of Hamburg"
+  ],
+
+  "france": [
+    "Sorbonne University",
+    "Paris-Saclay University",
+    "Ecole Polytechnique",
+    "University of Paris"
+  ],
+
+  "japan": [
+    "University of Tokyo",
+    "Kyoto University",
+    "Osaka University",
+    "Tohoku University"
+  ],
+
+  "china": [
+    "Tsinghua University",
+    "Peking University",
+    "Fudan University",
+    "Zhejiang University"
+  ],
+
+  "southkorea": [
+    "Seoul National University",
+    "KAIST",
+    "Yonsei University",
+    "Korea University"
+  ],
+
+  "dubai": [
+      "dubai university"
+  ]
+}
