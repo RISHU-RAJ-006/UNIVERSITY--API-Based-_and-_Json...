@@ -1,54 +1,39 @@
 
+let btn=document.querySelector("button").addEventListener("click",coapi);
 
+    
+    async function coapi() {
 
+    let country=document.querySelector("#result").value.toLowerCase();
+   
+    try {
+    if(!country.trim()){
+        alert("Please enter country name");
+        return;
+    }
+    console.log(country);
+    document.querySelector("#result").value="";
 
-let  url="http://universities.hipolabs.com/search?name=";
+        let res=await axios.get("./universities.json");
 
+                                    // this [] is notation it make "india" into json
+         let universities = res.data[country];
 
-let btn=document.querySelector("button");
-btn.addEventListener("click",async ()=>{
+         let ol=document.querySelector("#list");
+         ol.innerHTML="";
+         
 
-     let country=document.querySelector("#result").value;
-     if(!country) return
-       let con=await  getcollages(country);
-       console.log(con); 
+         for(let college of universities){
+            let li=document.createElement("li");
 
-
-    //  line no.. 14 array element hai isko phala for of loop laga ka ek ek item ko acces karanga 
-    // thenn c.name print hoga yani universty ka namm
-       console.log(country);
-       show(con);
-       document.querySelector("#result").value=""
-})
-
-
- function show(con){
-
-     let ul=document.querySelector("#list")
-     ul.innerText=""
-for(c of con){
-    console.log(c.name)
-
-    let li=document.createElement("li");
-  li.innerText=c.name
-    // li.innerText=ul
-      ul.appendChild(li);
-}
- }
-
- 
-
-
-
-async function getcollages(country) {
-
-    try{
-    let res=await axios.get(url+country);
-return res.data
-      }catch (error) {
-        console.log("error",error)
-        return "no university found"
+            li.innerText=college;
+            ol.append(li);
+            
+            console.log(college);
+         }
+        
+    } catch (error) { 
+        console.log(error);
     }
 }
 
-// getcollages()
