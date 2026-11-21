@@ -1,3 +1,3 @@
-#UNIVERSITY 
+#Find Your University By Country Name
 
-UNIVERSITY BASSE API PROJECT 
+A Project where you can find university By country Name 
